@@ -77,3 +77,18 @@ def conditionExistence(ellipse):
     C = ellipse['C']
     return B**2-4*A*C<0
 print(conditionExistence(ellipse))
+
+
+def getLineParameters(line1):
+    x1 = line1['x1']
+    y1 = line1['y1']
+
+    x2 = line1['x2']
+    y2 = line1['y2']
+
+    params = {'A': (y1 - y2), 'B': (x2 - x1), 'C': (x1 * y2 - x2 * y1)}
+
+    return params
+
+
+print(getLineParameters({'x1': 0, 'y1': 0, 'x2': 1, 'y2': 1}))
