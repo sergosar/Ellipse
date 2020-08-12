@@ -35,7 +35,7 @@ class Ui_MainWindow(object):
         self.FLButton = QtWidgets.QPushButton(self.centralwidget)
         self.FLButton.setObjectName("FLButton")
         self.verticalLayout.addWidget(self.FLButton)
-        self.FLButton.setCheckable(True)
+#        self.FLButton.setCheckable(True)
 
         self.SLButton = QtWidgets.QPushButton(self.centralwidget)
         self.SLButton.setObjectName("SLButton")
