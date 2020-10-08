@@ -49,6 +49,14 @@ class Ui_MainWindow(object):
         self.EllCenButton.setObjectName("EllCenButton")
         self.verticalLayout.addWidget(self.EllCenButton)
 
+        self.calcButton = QtWidgets.QPushButton(self.centralwidget)
+        self.calcButton.setObjectName("EllipseCalcButton")
+        self.verticalLayout.addWidget(self.calcButton)
+
+        self.gridButton = QtWidgets.QPushButton(self.centralwidget)
+        self.gridButton.setObjectName("gridButton")
+        self.verticalLayout.addWidget(self.gridButton)
+
         self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -58,7 +66,7 @@ class Ui_MainWindow(object):
         self.lineEdit.setMinimumSize(QtCore.QSize(200, 0))
         self.lineEdit.setObjectName("lineEdit")
         self.lineEdit.setDisabled(True)
-        self.lineEdit.setText("safsd")
+        self.lineEdit.setText("Ready")
         self.verticalLayout.addWidget(self.lineEdit)
         spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.verticalLayout.addItem(spacerItem)
@@ -75,3 +83,5 @@ class Ui_MainWindow(object):
         self.SLButton.setText(_translate("MainWindow", "Second Line"))
         self.TPointButton.setText(_translate("MainWindow", "Tangent point"))
         self.EllCenButton.setText(_translate("MainWindow", "Ellipse Center"))
+        self.calcButton.setText(_translate("MainWindow", "Ellipse Calc"))
+        self.gridButton.setText(_translate("MainWindow", "gridButton"))

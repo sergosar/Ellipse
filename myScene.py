@@ -18,16 +18,19 @@ class MyScene(QtWidgets.QGraphicsScene):
         self.groupLine2 = QGraphicsItemGroup()
         self.groupTangentPoint = QGraphicsItemGroup()
         self.groupEllipse = QGraphicsItemGroup()
+        self.groupGrid = QGraphicsItemGroup()
 
         self.addItem(self.groupLine1)
         self.addItem(self.groupLine2)
         self.addItem(self.groupTangentPoint)
         self.addItem(self.groupEllipse)
+        self.addItem(self.groupGrid)
 
         self.line1 = []
         self.line2 = []
         self.tangentPoint = None
         self.ellipseCenterP = None
+        self.grid = False
 
     def mousePressEvent(self, event):
         self.point = event.scenePos()
